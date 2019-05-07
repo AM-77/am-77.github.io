@@ -276,17 +276,17 @@ img {
     display: block;
     transform: rotateZ(90deg) translateX(300px);
     cursor: pointer;
-    font-size: 15px;
-    color: rgba(51, 51, 51, .77)
+    font-size: 16px;
+    color: rgba(51, 51, 51, .85);
 }
 
 .main_container .menu_btn .btn:after {
     display: block;
     content: "";
-    width: 40px;
+    width: 0px;
     height: 2px;
     margin: 0 auto;
-    background: #555
+    background: rgba(51, 51, 51, .85);
 }
 
 .main_container .menu_btn .btn:hover:after {
@@ -294,20 +294,16 @@ img {
     -moz-animation: animate_underline 250ms ease-out forwards;
     -ms-animation: animate_underline 250ms ease-out forwards;
     -o-animation: animate_underline 250ms ease-out forwards;
-    animation: animate_underline 250ms ease-out forwards
+    animation: animate_underline 250ms ease forwards
 }
 
 @keyframes animate_underline {
     0% {
-        margin: 0 auto;
-        width: 0;
-        opacity: 0
+        width: 0
     }
 
     100% {
-        margin: 0 auto;
-        width: 40px;
-        opacity: 1
+        width: 42px
     }
 }
 
@@ -348,7 +344,7 @@ img {
 
 .main_container .nav_bar .menu_list ul li.title {
     right: 0;
-    color: rgba(51, 51, 51, .85)
+    color: rgba(51, 51, 51, .85);
 }
 
 .main_container .nav_bar .menu_list ul li.hovered {
@@ -395,15 +391,19 @@ img {
     display: inline-block;
     width: 10%;
     float: left;
-    color: rgba(51, 51, 51, .2);
-    font-size: 15px
+    color: rgba(51, 51, 51, .85);
+    font-size: 15px;
+    font-family: "dosis";
 }
 
 .main_container .nav_bar .menu_list ul li div {
     display: block;
     position: relative;
     width: 100%;
-    height: 35px
+    height: 35px;
+    color: rgba(51, 51, 51, .85);
+    font-family: dosis;
+    font-size: 16px;
 }
 
 .main_container .nav_bar .menu_list ul li div a {
@@ -420,7 +420,7 @@ img {
     display: flex;
     position: relative;
     height: 1px;
-    border-bottom: 1px dashed rgba(51, 51, 51, .2);
+    border-bottom: 1px dashed rgba(51, 51, 51, .85);
     top: 25px;
     left: 7px
 }
@@ -433,6 +433,7 @@ img {
 }
 
 .main_container .content.show_nav {
+    float: right;
     -webkit-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
     -moz-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
     -ms-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
@@ -442,11 +443,13 @@ img {
 
 @keyframes animate_show_content {
     0% {
-        left: 0
+        left: 0;
+        width: 100%
     }
 
     100% {
-        left: -360px
+        left: -360px;
+        width: calc(100% - 400px);
     }
 }
 
