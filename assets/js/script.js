@@ -139,8 +139,8 @@ $( function() {
                         scrollTop: $("#" + this.classList[0]).offset().top
                     }, 500, function(){
                         if(nav.hasClass("show_nav")){
-                            nav.removeClass("show_nav").addClass("hide_nav")
-                            content.removeClass("show_nav").addClass("hide_nav")
+                            
+                            
                         }
                     });
                 }                
