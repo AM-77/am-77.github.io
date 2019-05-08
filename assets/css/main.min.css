@@ -169,6 +169,10 @@ body{
     min-width: 400px;
 }
 
+.clear{
+    clear: both;
+}
+
 .main_container {
     display: block;
     position: relative;
@@ -666,6 +670,7 @@ body{
     width: 100%;
     padding: 60px 10%;
     background-color: #f9f9f9;
+    padding-bottom: 20px;
 }
 
 
@@ -752,12 +757,12 @@ body{
 .main_container .whaticando_container .my_skills .skills {
     display: block;
     position: relative;
-    margin: 100px auto 0;
-    width: 90%
+    margin: 50px auto 0;
+    width: 90%;
+    height: auto;
 }
 
 .main_container .whaticando_container .webdev_skills {
-    height: 400px
 }
 
 .main_container .whaticando_container .extra_skills {
@@ -771,18 +776,15 @@ body{
     font-size: 24px;
     text-transform: capitalize;
     color: #0d6f3e;
-    width: 15%;
-    margin-right: 5%;
-    float: left;
-    height: 100%
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .main_container .whaticando_container .my_skills .skills_group {
     display: block;
     position: relative;
-    width: 80%;
-    height: 100%;
-    float: left
+    margin-bottom: 50px;
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill {
@@ -830,7 +832,7 @@ body{
     position: absolute;
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(90deg, #195, #03564e);
+    background: linear-gradient(90deg, #195, #560303);
     float: left
 }
 
@@ -1098,7 +1100,7 @@ body{
     height: 40px;
     overflow: hidden;
     color: #f9f9f9;
-    background: #195;
+    background: linear-gradient(90deg, #195, #560303);
     border: 0;
     border-radius: 25px;
     font-family: "dosis";
@@ -1218,7 +1220,7 @@ body{
     display: block;
     width: 40px;
     height: 40px;
-    background: #195;
+    background: linear-gradient(90deg, #195, #560303);
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -1347,6 +1349,10 @@ footer.footer .copyright p:last-child span svg {
         font-size: 45px
     }
 
+    .main_container .contact, .main_container .whaticando, .main_container .whatidid, .main_container .whoami{
+        text-align: center;
+    }
+
     .main_container .whaticando_container .webdev_skills {
         height: 700px
     }
@@ -1374,6 +1380,16 @@ footer.footer .copyright p:last-child span svg {
         margin-top: 40px
     }
 
+    .contact_container .up {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 20px
+    }
+
     .footer.footer .copyright{
         width: clac(100% - 40px);
         float: left;
@@ -1395,4 +1411,9 @@ footer.footer .copyright p:last-child span svg {
     .slogo span {
         font-size: 19px;
     }
+}
+
+
+.dots{
+    display: none
 }
