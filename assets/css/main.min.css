@@ -146,6 +146,29 @@ img {
     height: 40px
 }
 
+p{
+    font-family: 'Source Sans Pro', roboto, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+}
+
+h1{
+    font-family: "dosis", roboto, karla;
+    font-size: 55px;
+    color: #195;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, .21);
+    margin-bottom: 50px;
+}
+
+body{
+    min-width: 400px;
+}
+
 .main_container {
     display: block;
     position: relative;
@@ -571,8 +594,7 @@ img {
 .slogo span {
     font-family: "consolas", monospace;
     font-size: 41px;
-    font-weight: 600;
-    color: #2D2324
+    color: #2D2324;
 }
 
 .slogo span.console {
@@ -587,9 +609,6 @@ img {
     color: #607D8B
 }
 
-.slogo span.text {
-    color: #195
-}
 
 .slogo span.cursor {
     -webkit-animation: cursor .9s cubic-bezier(.24, .02, .01, .99) 0s infinite;
@@ -644,30 +663,24 @@ img {
 .main_container .whaticando_container,
 .main_container .whatidid_container,
 .main_container .whoami_container {
-    display: block;
-    position: relative;
     width: 100%;
-    margin: 0 auto;
-    padding: 80px 10%;
-    background-color: #f9f9f9
+    padding: 60px 10%;
+    background-color: #f9f9f9;
 }
 
-.contact .contact_container {
-    padding: 80px 5%
-}
 
 .main_container .dots {
     display: block;
     width: 100%;
     text-align: center;
-    background: #f9f9f9
+    background: #f9f9f9;
 }
 
 .main_container .dots span {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: rgba(99, 98, 98, .2);
+    background: #333333;
     border-radius: 100%;
     margin: 0 5px
 }
@@ -679,19 +692,6 @@ img {
     top: 2px
 }
 
-.contact .contact_container h1.title,
-.main_container .whaticando_container h1.title,
-.main_container .whatidid_container h1.title,
-.main_container .whoami_container h1.title {
-    font-family: "dosis", roboto, karla;
-    font-size: 55px;
-    color: #195;
-    /*! font-weight: 600; */
-    text-align: center;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, .21)
-}
-
 .main_container .whoami_container .my_pic {
     display: block;
     position: relative;
@@ -701,8 +701,8 @@ img {
     transform: rotate(45deg);
     margin: 80px auto;
     overflow: hidden;
-    border-radius: 7px;
-    box-shadow: 2px 2px 6px rgba(100, 100, 100, .5)
+    box-shadow: 1px 1px 1px rgba(100, 100, 100, .25);
+    border: 2px solid #195;
 }
 
 .main_container .whoami_container .my_pic img {
@@ -712,22 +712,15 @@ img {
     left: -39px;
     width: 150%;
     height: 150%;
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
 }
 
 .main_container .whoami_container .my_infos {
     display: block;
     position: relative;
-    top: -20px
-}
-
-.main_container .whoami_container .my_infos p {
-    font-family: "Source sans pro";
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #555;
-    text-align: center
+    top: -20px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .main_container .whoami_container .my_infos p span.cool {
@@ -742,14 +735,6 @@ img {
     margin: 0 auto
 }
 
-.main_container .whaticando_container p.description {
-    font-family: "Source sans Pro";
-    font-weight: 300;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 18px;
-    color: rgba(51, 51, 51, .8)
-}
 
 .main_container .whaticando_container p span.cool {
     font-family: dosis;
@@ -781,7 +766,7 @@ img {
 
 .main_container .whaticando_container .my_skills .sub_title {
     display: inline-block;
-    font-family: roboto, karla;
+    font-family: 'Dosis',roboto, karla;
     font-weight: 600;
     font-size: 24px;
     text-transform: capitalize;
@@ -804,10 +789,8 @@ img {
     display: block;
     position: relative;
     width: 46%;
-    height: 40px;
     margin: 15px 2%;
     float: left;
-    font-family: "Source Sans Pro"
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill:nth-child(1),
@@ -822,7 +805,6 @@ img {
 
 .main_container .whaticando_container .my_skills .skills_group .skill .name {
     margin-left: 10px;
-    color: #555;
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .number {
@@ -845,25 +827,11 @@ img {
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent span {
     display: block;
-    position: relative;
+    position: absolute;
     height: 100%;
     border-radius: inherit;
     background: linear-gradient(90deg, #195, #03564e);
     float: left
-}
-
-.main_container .whaticando_container .my_skills .skills_group .skill .precent .circle {
-    display: block;
-    width: 13px;
-    height: 13px;
-    border: 1px solid #03564e;
-    border-radius: 100%;
-    float: left;
-    top: -4px;
-    left: -10px;
-    background: #f1f2f3;
-    box-shadow: 0 0 5px #03564e;
-    cursor: pointer
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_50 {
@@ -909,6 +877,64 @@ img {
 .main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_100 {
     width: 100%
 }
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent .circle {
+    width: 14px;
+    height: 14px;
+    border: 1px dashed #03564e;
+    border-radius: 100%;
+    top: -4px;
+    background: #f1f2f3;
+    box-shadow: 0 0px 1px #03564e;
+    cursor: pointer;
+    position: absolute;
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_50 + span {
+    left: calc(50% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_55 + span {
+    left: calc(55% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_60 + span {
+    left: calc(60% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_65 + span {
+    left: calc(65% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_70 + span {
+    left: calc(70% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_75 + span {
+    left: calc(75% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_80 + span {
+    left: calc(80% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_85 + span {
+    left: calc(85% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_90 + span {
+    left: calc(90% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_95 + span {
+    left: calc(95% - 7px);
+}
+
+.main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_100 + span {
+    left: calc(100% - 7px);
+}
+
+
 
 .contact_container .sub_container {
     display: block;
@@ -1198,7 +1224,7 @@ img {
     bottom: 20px;
     border-radius: 100%;
     cursor: pointer;
-    box-shadow: 0 2px 3px rgba(51, 51, 51, .5);
+    box-shadow: 0 1px 1px rgba(51, 51, 51, .5);
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     -ms-transition: all 250ms ease-out;
@@ -1220,30 +1246,24 @@ img {
 footer.footer {
     display: block;
     width: 100%;
-    height: 50px
 }
 
 footer.footer .copyright {
     display: block;
-    height: 50px;
     width: 100%
 }
 
 footer.footer .copyright p {
     display: block;
     width: 50%;
-    height: 50px;
     line-height: 3.75;
-    font-family: 'Source Sans Pro', roboto, sans-serif;
     font-size: 14px;
-    color: #212121;
-    position: relative;
-    float: left
+    float: left;
 }
 
 footer.footer .copyright p:first-child {
     text-align: left;
-    padding-left: 7.5%
+    padding-left: 5%;
 }
 
 footer.footer .copyright p:first-child span {
@@ -1254,7 +1274,7 @@ footer.footer .copyright p:first-child span {
 footer.footer .copyright p:last-child {
     text-transform: capitalize;
     text-align: right;
-    padding-right: 10%
+    padding-right: 5%;
 }
 
 footer.footer .copyright p:last-child span svg {
@@ -1265,11 +1285,28 @@ footer.footer .copyright p:last-child span svg {
 }
 
 @media screen and (max-width:1050px) {
+
+    .main_container .content.show_nav {
+        float: right;
+        -webkit-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
+        -moz-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
+        -ms-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
+        -o-animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards;
+        animation: animate_show_content 350ms cubic-bezier(0, 0, .06, 1.19) forwards
+    }
+
+    @keyframes animate_show_content {
+        0% {
+            left: 0
+        }
+    
+        100% {
+            left: -360px
+        }
+    }
+
     .slogo span {
-        font-family: "consolas", monospace;
-        font-weight: 600;
         font-size: 29.5px;
-        color: #2D2324
     }
 
     .main_container .whaticando_container .webdev_skills {
@@ -1288,16 +1325,11 @@ footer.footer .copyright p:last-child span svg {
     }
 
     .main_container .whaticando_container .my_skills .sub_title {
-        display: inline-block;
-        font-family: "dosis", "adobe garamond pro", karla;
-        font-weight: 600;
-        font-size: 25px;
-        text-transform: capitalize;
         width: 100%;
-        margin: 44px auto 0;
+        margin: 25px auto;
         float: none;
-        height: 50px;
-        text-align: center
+        height: auto;
+        text-align: center;
     }
 
     .main_container .whaticando_container .my_skills .skills_group {
@@ -1310,6 +1342,11 @@ footer.footer .copyright p:last-child span svg {
 }
 
 @media screen and (max-width:850px) {
+
+    h1{
+        font-size: 45px
+    }
+
     .main_container .whaticando_container .webdev_skills {
         height: 700px
     }
@@ -1336,6 +1373,18 @@ footer.footer .copyright p:last-child span svg {
     .contact_container .sub_container .title {
         margin-top: 40px
     }
+
+    .footer.footer .copyright{
+        width: clac(100% - 40px);
+        float: left;
+    }
+
+    .footer.footer .copyright p{
+        width: 100%;
+        text-align: center !important;
+        float: none;
+        padding: 0 !important
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -1344,9 +1393,6 @@ footer.footer .copyright p:last-child span svg {
     }
 
     .slogo span {
-        font-family: "fira code", monospace;
-        font-weight: 600;
-        font-size: 18px;
-        color: #2D2324
+        font-size: 19px;
     }
 }
