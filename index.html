@@ -383,7 +383,8 @@
                                     <div class="map">
                                         <p class="title">Find me on the real world</p>
                                         <div class="map_contianer">
-                                            <span class="loader"></span>
+                                            
+                                            <div id="map"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -411,5 +412,27 @@
         
         <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
         <script src="./assets/js/script.js" type="text/javascript"></script>
+        
+        
+        <script>
+            var map
+            function initMap() {
+              var myLatLng = {lat: 36.676823, lng: 3.388270};
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: myLatLng
+              });
+
+              var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hola! I\'m here.'
+              });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKdgQHydxT0480sTymRqYcnujl0nMyTm8&callback=initMap"
+        async defer></script>
+        
     </body>
 </html>

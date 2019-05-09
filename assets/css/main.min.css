@@ -1205,6 +1205,14 @@ body{
     }
 }
 
+.contact_container .sub_container .right_side .map #map{
+    display: block;
+    background: red;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 .contact_container .sub_container .title {
     font-family: "Source Sans Pro";
     text-align: center;
