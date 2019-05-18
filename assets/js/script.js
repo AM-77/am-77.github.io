@@ -1,23 +1,15 @@
 
 $( function() {
 
-    $(".header_container .head .socails ul li.theme .dark").on("click", function(){
-        if($(this).hasClass("hide")){
-            $(this).removeClass("hide")
-            $(".header_container .head .socails ul li.theme .light").addClass("hide")
-        }else{
-            $(this).addClass("hide")
-            $(".header_container .head .socails ul li.theme .light").removeClass("hide")
-        }
-    })
-
-    $(".header_container .head .socails ul li.theme .light").on("click", function(){
-        if($(this).hasClass("hide")){
-            $(this).removeClass("hide")
-            $(".header_container .head .socails ul li.theme .dark").addClass("hide")
-        }else{
-            $(this).addClass("hide")
+    $(".header_container .head .socails ul li.theme").on("click", function(){
+        if($(".header_container .head .socails ul li.theme .dark").hasClass("hide")){
             $(".header_container .head .socails ul li.theme .dark").removeClass("hide")
+            $(".header_container .head .socails ul li.theme .light").addClass("hide")
+            $(".dark-mode").remove()
+        }else{
+            $(".header_container .head .socails ul li.theme .dark").addClass("hide")
+            $(".header_container .head .socails ul li.theme .light").removeClass("hide")
+            $("head").append('<link class="dark-mode" rel="stylesheet" href="./assets/css/dark-theme.css" />')
         }
     })
 
