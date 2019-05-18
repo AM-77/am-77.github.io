@@ -163,6 +163,9 @@ h1{
     text-transform: capitalize;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, .21);
     margin-bottom: 50px;
+    background: linear-gradient( 45deg, #195, #560303);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 body{
@@ -801,6 +804,10 @@ body{
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    line-height: 1.5em;
+    background: linear-gradient(to right, #195, #560303);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .main_container .whaticando_container .my_skills .skills_group {
