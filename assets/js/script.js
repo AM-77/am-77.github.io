@@ -1,6 +1,26 @@
 
 $( function() {
 
+    $(".header_container .head .socails ul li.theme .dark").on("click", function(){
+        if($(this).hasClass("hide")){
+            $(this).removeClass("hide")
+            $(".header_container .head .socails ul li.theme .light").addClass("hide")
+        }else{
+            $(this).addClass("hide")
+            $(".header_container .head .socails ul li.theme .light").removeClass("hide")
+        }
+    })
+
+    $(".header_container .head .socails ul li.theme .light").on("click", function(){
+        if($(this).hasClass("hide")){
+            $(this).removeClass("hide")
+            $(".header_container .head .socails ul li.theme .dark").addClass("hide")
+        }else{
+            $(this).addClass("hide")
+            $(".header_container .head .socails ul li.theme .dark").removeClass("hide")
+        }
+    })
+
     $(".main_container .nav_bar .menu_list ul li").each(function(){
         if(!$(this).hasClass("title")){
             $(this).on("mouseleave", function(){
