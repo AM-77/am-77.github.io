@@ -7,5 +7,5 @@ $headers = 'From: '. $_POST['email'] . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
-header("Location: http://medaminegriche.tk/");
+header("Location: http://am-77.gtihub.io/");
 ?> 
