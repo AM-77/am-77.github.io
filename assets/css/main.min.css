@@ -1441,6 +1441,53 @@ footer.footer .copyright p:last-child span svg {
 }
 
 @media screen and (max-width:650px) {
+    
+    .header_container .head {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header_container .head .logo {
+        display: inline-block;
+        float: none;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+
+    .header_container .head .logo a {
+        display: block;
+        text-align: center;
+    }
+
+    .header_container .head .logo a svg {
+        display: block;
+        float: none;
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
+    }
+
+    .header_container .head .logo a span {
+        display: inline-block;
+        float: none;
+    }
+
+    .header_container .head .socails {
+        display: block;
+        float: none;
+        margin-right: 0px;
+        margin-top: 15px
+    }
+
+    .header_container .head .socails ul {
+        margin-right: 0px
+    }
+
+    .header_container .head .socails ul li.theme{
+        margin-left: 10px;
+    }
+
     .slogo {
         padding-left: 10%
     }
