@@ -248,7 +248,7 @@ h1{
 
 .contact_container .sub_container .left_side form input,
 .contact_container .sub_container .left_side form textarea {
-    background-color: #111;
+    background-color: transparent;
     color: rgba(234, 234, 234, 0.75);
     padding: 10px;
 }
