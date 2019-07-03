@@ -170,4 +170,29 @@ $( function() {
         $("section.main_container ~ div").remove()
     }, 500)
 
+
+    // sending the email
+
+    $('form button.send').on("click", function(e){
+        name = $('input.name')
+        email = $('input.email')
+        msg = $('textarea.message')
+
+        if ( email.value == "" || message.value == "" ){
+            alertify.error('Please check your entries')
+            return false
+        }
+        else{
+            $.ajax({
+                method: 'POST',
+                url: 'https://formspree.io/amine.griche77@gmail.com',
+                data: {message: msg.value},
+                datatype: 'json'
+            })
+            e.preventDefault()
+            alertify.success('Message sent')
+        }
+           
+    })
+
 })
