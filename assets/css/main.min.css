@@ -158,12 +158,12 @@ p{
 h1{
     font-family: "dosis", roboto, karla;
     font-size: 55px;
-    color: #195;
+    color: #C80022;
     text-align: center;
     text-transform: capitalize;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, .21);
     margin-bottom: 50px;
-    background: linear-gradient( 45deg, #195, #560303);
+    background: linear-gradient( 45deg, #C80022, #560303);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -736,7 +736,7 @@ body{
     margin: 80px auto;
     overflow: hidden;
     box-shadow: 1px 1px 1px rgba(100, 100, 100, .25);
-    border: 2px solid #195;
+    border: 2px solid #C80022;
 }
 
 .main_container .whoami_container .my_pic img {
@@ -806,7 +806,7 @@ body{
     text-align: center;
     margin-bottom: 50px;
     line-height: 1.5em;
-    background: linear-gradient(to right, #195, #560303);
+    background: linear-gradient(to right, #C80022, #560303);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -862,7 +862,7 @@ body{
     position: absolute;
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(90deg, #195, #560303);
+    background: linear-gradient(90deg, #C80022, #560303);
     float: left
 }
 
@@ -1028,7 +1028,7 @@ body{
     }
 
     100% {
-        color: #195;
+        color: #C80022;
         top: 0
     }
 }
@@ -1043,7 +1043,7 @@ body{
 
 @keyframes label_desactive {
     0% {
-        color: #195;
+        color: #C80022;
         top: 0
     }
 
@@ -1085,7 +1085,7 @@ body{
     width: 0;
     position: relative;
     top: -2px;
-    background-color: #195
+    background-color: #C80022
 }
 
 .contact_container .sub_container .left_side form .input_hover.active {
@@ -1130,7 +1130,7 @@ body{
     height: 40px;
     overflow: hidden;
     color: #f9f9f9;
-    background: linear-gradient(90deg, #195, #560303);
+    background: linear-gradient(90deg, #C80022, #560303);
     border: 0;
     border-radius: 25px;
     font-family: "dosis";
@@ -1257,7 +1257,7 @@ body{
     display: block;
     width: 40px;
     height: 40px;
-    background: linear-gradient(90deg, #195, #560303);
+    background: linear-gradient(90deg, #C80022, #560303);
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -1306,7 +1306,7 @@ footer.footer .copyright p:first-child {
 }
 
 footer.footer .copyright p:first-child span {
-    color: #195;
+    color: #C80022;
     font-weight: 600
 }
 
