@@ -913,11 +913,11 @@ body{
 .main_container .whaticando_container .my_skills .skills_group .skill .precent .circle {
     width: 14px;
     height: 14px;
-    border: 1px dashed #03564e;
+    border: 1px dashed #C40F46;
     border-radius: 100%;
     top: -4px;
     background: #f1f2f3;
-    box-shadow: 0 0px 1px #03564e;
+    box-shadow: 0 0px 1px #C40F46;
     cursor: pointer;
     position: absolute;
 }
