@@ -4,8 +4,8 @@ p{
 }
 
 h1{
-    color: #991155;
-    background: linear-gradient( 45deg, #991155, #005858);
+    color: #00C780;
+    background: linear-gradient( 45deg, #00C780, #00C780);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -187,13 +187,13 @@ h1{
 }
 
 .main_container .whoami_container .my_pic {
-    border: 2px solid #991155;
+    border: 2px solid #00C780;
 }
 
 
 .main_container .whaticando_container .my_skills .sub_title {
     color: #0d6f3e;
-    background: linear-gradient(to right, #991155, #005858);
+    background: linear-gradient(to right, #00C780, #00C780);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -204,7 +204,7 @@ h1{
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent span {
-    background: linear-gradient(90deg, #991155, #005858);
+    background: linear-gradient(90deg, #00C780, #00C780);
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent .circle {
@@ -224,7 +224,7 @@ h1{
     }
 
     100% {
-        color: #991155;
+        color: #00C780;
         top: 0
     }
 }
@@ -232,7 +232,7 @@ h1{
 
 @keyframes label_desactive {
     0% {
-        color: #991155;
+        color: #00C780;
         top: 0
     }
 
@@ -255,12 +255,12 @@ h1{
 
 
 .contact_container .sub_container .left_side form .input_hover {
-    background-color: #991155
+    background-color: #00C780
 }
 
 .contact_container .sub_container .left_side form button {
     color: #f9f9f9;
-    background: linear-gradient(90deg, #991155, #005858);
+    background: linear-gradient(90deg, #00C780, #00C780);
 }
 
 .contact_container .sub_container .left_side form button:hover {
@@ -281,7 +281,7 @@ h1{
 }
 
 .contact_container .up {
-    background: linear-gradient(90deg, #991155, #005858);
+    background: linear-gradient(90deg, #00C780, #00C780);
     box-shadow: 0 1px 1px rgba(51, 51, 51, .5);
 }
 
@@ -290,5 +290,5 @@ h1{
 }
 
 footer.footer .copyright p:first-child span {
-    color: #991155;
+    color: #00C780;
 }
