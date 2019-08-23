@@ -158,12 +158,12 @@ p{
 h1{
     font-family: "dosis", roboto, karla;
     font-size: 55px;
-    color: #C40F46;
+    color: #119955;
     text-align: center;
     text-transform: capitalize;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, .21);
     margin-bottom: 50px;
-    background: linear-gradient( 45deg, #C40F46, #C40F46);
+    background: linear-gradient( 45deg, #055848, #119955);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -698,7 +698,7 @@ body{
 .main_container .whoami_container {
     width: 100%;
     padding: 60px 10%;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF;
     padding-bottom: 20px;
 }
 
@@ -707,16 +707,16 @@ body{
     display: block;
     width: 100%;
     text-align: center;
-    background: #f9f9f9;
+    background: #FFFFFF;
 }
 
 .main_container .dots span {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: #333333;
+    background: #0C8353;
     border-radius: 100%;
-    margin: 0 5px
+    margin: 0 5px;
 }
 
 .main_container .dots span:nth-child(odd) {
@@ -736,7 +736,7 @@ body{
     margin: 80px auto;
     overflow: hidden;
     box-shadow: 1px 1px 1px rgba(100, 100, 100, .25);
-    border: 2px solid #C40F46;
+    border: 2px solid #055848;
 }
 
 .main_container .whoami_container .my_pic img {
@@ -801,12 +801,12 @@ body{
     font-weight: 600;
     font-size: 24px;
     text-transform: capitalize;
-    color: #0d6f3e;
+    color: #0C8353;
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
     line-height: 1.5em;
-    background: linear-gradient(to right, #C40F46, #C40F46);
+    background: linear-gradient(to right, #055848, #0C8353);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -862,8 +862,8 @@ body{
     position: absolute;
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(90deg, #C40F46, #C40F46);
-    float: left
+    background: linear-gradient(90deg, #034942, #034942);
+    float: left;
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent span.p_50 {
@@ -913,11 +913,11 @@ body{
 .main_container .whaticando_container .my_skills .skills_group .skill .precent .circle {
     width: 14px;
     height: 14px;
-    border: 1px dashed #C40F46;
+    border: 1px dashed #034942;
     border-radius: 100%;
     top: -4px;
     background: #f1f2f3;
-    box-shadow: 0 0px 1px #C40F46;
+    box-shadow: 0 0px 1px #034942;
     cursor: pointer;
     position: absolute;
 }
@@ -1130,7 +1130,7 @@ body{
     height: 40px;
     overflow: hidden;
     color: #f9f9f9;
-    background: linear-gradient(90deg, #C40F46, #C40F46);
+    background: linear-gradient(90deg, #055848, #119955);
     border: 0;
     border-radius: 25px;
     font-family: "dosis";
@@ -1139,12 +1139,11 @@ body{
     margin: 35px auto 0;
     position: relative;
     width: 200px;
-    
     -webkit-transition: all ease-out 250ms;
     -moz-transition: all ease-out 250ms;
     -ms-transition: all ease-out 250ms;
     -o-transition: all ease-out 250ms;
-    transition: all ease-out 250ms
+    transition: all ease-out 250ms;
 }
 
 .contact_container .sub_container .left_side form button:hover {
@@ -1257,7 +1256,7 @@ body{
     display: block;
     width: 40px;
     height: 40px;
-    background: linear-gradient(90deg, #C40F46, #C40F46);
+    background: linear-gradient(90deg, #055848, #119955);
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -1268,7 +1267,7 @@ body{
     -moz-transition: all 250ms ease-out;
     -ms-transition: all 250ms ease-out;
     -o-transition: all 250ms ease-out;
-    transition: all 250ms ease-out
+    transition: all 250ms ease-out;
 }
 
 .contact_container .up:hover {
@@ -1501,3 +1500,4 @@ footer.footer .copyright p:last-child span svg {
 .dots{
     display: none
 }
+
