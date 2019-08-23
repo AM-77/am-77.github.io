@@ -3,9 +3,12 @@ p{
     color: #ddd;
 }
 
+
+
+
 h1{
-    color: #00C780;
-    background: linear-gradient( 45deg, #00C780, #00C780);
+    color: #0C8353;
+    background: linear-gradient( 45deg, #0C8353, #0C8353);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -75,11 +78,11 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(29, 27, 59, 0.9);
 }
 
 .main_container .nav_bar {
-    background-color: rgba(46, 46, 46, .9);
+    background-color: rgb(29, 27, 59);
 }
 
 .main_container .nav_bar .menu_btn {
@@ -175,11 +178,11 @@ h1{
 .main_container .whaticando_container,
 .main_container .whatidid_container,
 .main_container .whoami_container {
-    background-color: #171717;
+    background-color: #262548;
 }
 
 .main_container .dots {
-    background: #171717;
+    background: #262548;
 }
 
 .main_container .dots span {
@@ -187,30 +190,30 @@ h1{
 }
 
 .main_container .whoami_container .my_pic {
-    border: 2px solid #00C780;
+    border: 2px solid #0C8353;
 }
 
 
 .main_container .whaticando_container .my_skills .sub_title {
     color: #0d6f3e;
-    background: linear-gradient(to right, #00C780, #00C780);
+    background: linear-gradient(to right, #0C8353, #0C8353);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent {
-    background-color: #111;
-    border: 1px solid #000;
+    background-color: #1D1B3B;
+    border: 1px solid #1D1B3B;
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent span {
-    background: linear-gradient(90deg, #00C780, #00C780);
+    background: linear-gradient(90deg, #0C8353, #0C8353);
 }
 
 .main_container .whaticando_container .my_skills .skills_group .skill .precent .circle {
-    border: 1px dashed #000;
-    background: #222;
-    box-shadow: 0 0px 1px #000;
+    border: 1px dashed #086E4F;
+    background: #1D1B3B;
+    box-shadow: 0 0px 1px #1D1B3B;
 }
 
 .contact_container .sub_container .left_side form label {
@@ -224,7 +227,7 @@ h1{
     }
 
     100% {
-        color: #00C780;
+        color: #0C8353;
         top: 0
     }
 }
@@ -232,7 +235,7 @@ h1{
 
 @keyframes label_desactive {
     0% {
-        color: #00C780;
+        color: #0C8353;
         top: 0
     }
 
@@ -255,12 +258,12 @@ h1{
 
 
 .contact_container .sub_container .left_side form .input_hover {
-    background-color: #00C780
+    background-color: #0C8353
 }
 
 .contact_container .sub_container .left_side form button {
     color: #f9f9f9;
-    background: linear-gradient(90deg, #00C780, #00C780);
+    background: linear-gradient(90deg, #0C8353, #0C8353);
 }
 
 .contact_container .sub_container .left_side form button:hover {
@@ -281,7 +284,7 @@ h1{
 }
 
 .contact_container .up {
-    background: linear-gradient(90deg, #00C780, #00C780);
+    background: linear-gradient(90deg, #0C8353, #0C8353);
     box-shadow: 0 1px 1px rgba(51, 51, 51, .5);
 }
 
@@ -290,5 +293,6 @@ h1{
 }
 
 footer.footer .copyright p:first-child span {
-    color: #00C780;
+    color: #0C8353;
 }
+
