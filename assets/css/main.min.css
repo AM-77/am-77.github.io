@@ -1028,7 +1028,7 @@ body{
     }
 
     100% {
-        color: #C40F46;
+        color: #004C41;
         top: 0
     }
 }
@@ -1043,7 +1043,7 @@ body{
 
 @keyframes label_desactive {
     0% {
-        color: #C40F46;
+        color: #004C41;
         top: 0
     }
 
@@ -1057,19 +1057,19 @@ body{
     color: rgba(193, 5, 41, .7);
     font-family: roboto;
     font-size: 22px;
-    margin-left: 5px
+    margin-left: 5px;
 }
 
 .contact_container .sub_container .left_side form input,
 .contact_container .sub_container .left_side form textarea {
     height: 35px;
     border: 0;
-    background-color: #F9F9F9;
+    background-color: #fff;
     outline: 0;
     font-family: roboto;
     font-size: 16px;
     color: rgba(51, 51, 51, .75);
-    border-bottom: 2px solid rgba(51, 51, 51, .15)
+    border-bottom: 2px solid rgba(51, 51, 51, .05);
 }
 
 .contact_container .sub_container .left_side form textarea {
@@ -1085,7 +1085,7 @@ body{
     width: 0;
     position: relative;
     top: -2px;
-    background-color: #C40F46
+    background-color: #004C41;
 }
 
 .contact_container .sub_container .left_side form .input_hover.active {
@@ -1500,4 +1500,5 @@ footer.footer .copyright p:last-child span svg {
 .dots{
     display: none
 }
+
 
