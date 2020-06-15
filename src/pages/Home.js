@@ -1,10 +1,5 @@
 import React, { Component } from "react"
-import Footer from "../components/Footer/Footer"
-import { Power3, gsap } from "gsap"
-
-import itatchi_01 from "./../assets/pic-01.jpg"
-import itatchi_02 from "./../assets/pic-02.jpg"
-import sharingan_eye from "./../assets/logo.png"
+import { gsap, Power3 } from "gsap"
 
 export default class Home extends Component {
 
@@ -30,52 +25,8 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="page-container">
-                <div className="home-container">
-                    <div className="hero">
-                        <div className="inner-hero">
-                            <div className="text-side">
-                                <div className="title">
-                                    <div className="title-container">
-                                        <div className="title-line-container">
-                                            <h1 ref="title_line_1" className="title-line">Itatchi</h1>
-                                        </div>
-                                        <div className="title-line-container">
-                                            <h1 ref="title_line_2" className="title-line">Uchiha</h1>
-                                        </div>
-                                    </div>
-                                    <div ref="the_eye" className="sharingan-eye">
-                                        <img src={sharingan_eye} alt="sharingan-eye" />
-                                    </div>
-                                </div>
-                                <div className="description">
-                                    <div className="description-container">
-                                        <div className="description-line-container">
-                                            <p ref="description_line_1" className="description-line">(うちはイタチ, Uchiha Itachi)</p>
-                                        </div>
-                                        <div className="description-line-container">
-                                            <p ref="description_line_2" className="description-line">A ninja of Konohagakure's Uchiha clan that served as an Anbu Captain.</p>
-                                        </div>
-                                        <div className="description-line-container">
-                                            <p ref="description_line_3" className="description-line">He later became an international criminal after murdering his entire clan.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="image-side">
-                                <div className="images-container">
-                                    <div ref="image_01_container" className="image-container">
-                                        <img ref="image_01" className="image" src={itatchi_01} alt='itatchi' />
-                                    </div>
-                                    <div ref="image_02_container" className="image-container">
-                                        <img ref="image_02" className="image" src={itatchi_02} alt='itatchi' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <Footer />
+            <div className='home-container'>
+                <div></div>
             </div>
         )
     }

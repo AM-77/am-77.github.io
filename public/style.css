@@ -1,0 +1,247 @@
+@font-face {
+	font-family: 'KievitOT';
+	src: url('./assets/fonts/KievitOT-Regular.otf')
+		format('opentype');
+}
+
+@font-face {
+    font-family: "SFShaiFontai";
+    src: url("./assets/fonts/SFShaiFontai.ttf");
+}
+
+:root{
+    --main-text-color: #f8f9fa;
+    --fade-white-color: #f1f2f354;
+    --bg-color: #141414
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-color);
+    font-family: "KievitOT", sans-serif;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.page-container{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.home-container .hero, .inner-hero{
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.inner-hero {
+    display: flex;
+    padding: 0 12.5%;
+}
+
+.text-side {
+   display: flex;
+   flex-direction: column;
+   margin-right: auto;
+   margin-top: 10%;
+}
+
+.title-line-container{
+    overflow: hidden;
+    padding: 5px;
+}
+
+.title {
+    display: flex;
+}
+
+.title .sharingan-eye{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    overflow:hidden;
+}
+
+.title .sharingan-eye img{
+    width: 100%;
+}
+
+.title-line{
+    font-family:  "SFShaiFontai", "KievitOT", sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.description{
+    margin-top: 45px;
+}
+
+.description-container{
+    overflow: hidden;
+}
+
+.description-line{
+    color: var(--main-text-color);
+    letter-spacing: -0.5px;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.images-container{
+    display:flex;
+}
+
+.image-container{
+    overflow: hidden;
+}
+
+.image-container:first-child{
+    width: 250px;
+    height: 400px;
+    margin-top: 130px;
+    margin-right: 25px;
+    border-radius: 3px
+}
+
+.image-container:last-child{
+    width: 180px;
+    height: 240px;
+    margin-top: 20px;
+    border-radius: 3px
+}
+
+.image-container .image{
+    width: 100%;
+    height: 100%;
+}
+
+.content-container{
+    display: flex;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 5%;
+    opacity: 0;
+    transform: translate(0px, 300px);
+}
+
+.footer-container .intro{
+    font-family: "KievitOT", sans-serif;
+    color: var(--main-text-color);
+    font-size: 15px;
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.footer-container .divider{
+    width: 100%;
+    height: 2px;
+    background: var(--fade-white-color);
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+.footer-container .contact-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-container .contact-links .address,
+.footer-container .contact-links .email,
+.footer-container .contact-links .socail-medias {
+    display: flex;
+    flex-direction: column
+}
+
+.footer-container .contact-links .address .title,
+.footer-container .contact-links .socail-medias .title,
+.footer-container .contact-links .email .title{
+    font-family: "KievitOT", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--fade-white-color);
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+.footer-container .contact-links .address .content .icon,
+.footer-container .contact-links .email .content .icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px
+}
+
+.footer-container .contact-links .content img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container .contact-links .address .content .info,
+.footer-container .contact-links .email .content .info{
+    font-family: "KievitOT", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--main-text-color)
+}
+
+.footer-container .contact-links .socail-medias .content a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-container .contact-links .socail-medias .content a:before{
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-right: 4px;
+    border-radius: 2px;
+}
+
+.footer-container .contact-links .socail-medias .content a.fb:before{
+    background-color: #0269E3
+}
+
+.footer-container .contact-links .socail-medias .content a.tw:before{
+    background-color: #55acee
+}
+
+.footer-container .contact-links .socail-medias .content a.ig:before{
+    background-color:#fcaf45
+}
+
+.footer-container .contact-links .socail-medias .content a.ln:before{
+    background-color: #0073B2
+}
