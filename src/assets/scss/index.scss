@@ -1,5 +1,24 @@
 @import "variables.scss";
+@import "page-transition.scss";
+@import "animations.scss";
+@import "home.scss";
+
+
+@font-face {
+	font-family: 'Cool-For-The-Momenet';
+	src: url('../fonts/Cool-For-The-Momenet.ttf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-  background: $primary
+    background: #212121;
+    color: #f1f2f3;
+    font-family: 'Cool-For-The-Momenet';
+    padding-top: 50px;
 }
+
