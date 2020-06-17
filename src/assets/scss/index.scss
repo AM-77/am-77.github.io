@@ -16,9 +16,21 @@
 }
 
 body {
-    background: #212121;
-    color: #f1f2f3;
+    background: $light;
+    color: $dark;
     font-family: 'Cool-For-The-Momenet';
-    padding-top: 50px;
+
+    a {
+        color: $dark;
+        transition: color 250ms ease-in-out;
+    }
 }
 
+body.dark {
+    background: $dark;
+    color: $light;
+
+    a {
+        color: $light;
+    }
+}
