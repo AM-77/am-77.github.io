@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import gsap from 'gsap'
+import { gsap, TimelineLite } from 'gsap'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Home from './pages/Home'
 import Work from './pages/Work'
 
 export default class App extends Component {
 
-    onEnter = node => { gsap.from(node, 1, { delay: 0.7, opacity: 0 })  }
+    constructor(props) {
+        super(props)
+        this.tl = new TimelineLite()
+    }
+
+    onEnter = node => { gsap.from(node, 1, { delay: 1, opacity: 0 }) }
     onExit = node => { gsap.to(node, 1, { opacity: 0 }) }
 
     componentDidMount() { 
@@ -20,10 +25,10 @@ export default class App extends Component {
             <div className='app-container' ref='app'>
                 <Route render={({ location })=>(
                     <TransitionGroup>
-                        <CSSTransition key={location.key} timeout={1200} onEnter={this.onEnter} onExit={this.onExit} >
+                        <CSSTransition key={location.key} timeout={1000} onEnter={this.onEnter} onExit={this.onExit} >
                             <Switch location={location}>
-                                <Route path='/' exact={true}><Home /></Route>
-                                <Route path='/work'><Work /></Route>
+                                <Route path='/' exact={true}><Home tl={this.tl} /></Route>
+                                <Route path='/work'><Work tl={this.tl} /></Route>
                             </Switch>
                         </CSSTransition>
                     </TransitionGroup>
