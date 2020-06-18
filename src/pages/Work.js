@@ -1,15 +1,25 @@
-import React, { Component, createRef } from 'react'
-import { gsap, Power3 } from 'gsap'
+import React, { Component } from 'react'
+import { Power3 } from 'gsap'
+import { NavLink } from 'react-router-dom'
+import Preloader from '../components/Preloader'
 
 export default class Work extends Component {
 
-    componentDidMount() { gsap.from(this.refs.workTitle, 1.2, { delay: 1.2, y: 80, ease: Power3.easeOut }) } 
+    componentDidMount() { 
+        this.props.tl
+            .from(this.refs.work_container, 1.2, { delay: -1, opacity: 0, ease: Power3.easeOut })
+            .play() 
+    } 
 
     render() {
         return (
-            <div className='about-container page-container'>
-                <div className='title-line-container'>
-                    <h1 ref='workTitle' className='title-line'>This is the about page</h1>
+            <div>
+                <Preloader tl={this.props.tl} />
+                <div className='about-container'>
+                    <div className='title-line-container'>
+                        <h1 ref='work_container'  className='title-line'>This is the about page</h1>
+                        <NavLink to='/'>go home.</NavLink>
+                    </div>
                 </div>
             </div>
         )
