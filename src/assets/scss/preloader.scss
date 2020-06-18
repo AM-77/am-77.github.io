@@ -1,0 +1,21 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  .logo-container {
+    display: block;
+    width: 150px;
+    height: 150px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
