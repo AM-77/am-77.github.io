@@ -8644,6 +8644,11 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
+react-preload@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-preload/-/react-preload-0.6.0.tgz#aea062ab8ae7e04380a15432681fb08550a0f677"
+  integrity sha512-4umNWO8HwoqhXbWG589m3LRPb1NYtmiVAdc2gpXi4AqF7B2XbgW7p6j9I1OMW89uH/mnQ6iOsnDZLmqeEToeaw==
+
 react-router-dom@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.1.2.tgz#06701b834352f44d37fbb6311f870f84c76b9c18"
