@@ -15,3 +15,34 @@
     border-radius: 58% 42% 55% 45% / 52% 55% 45% 48%;
   }
 }
+
+// loader
+@keyframes loader1 {
+  0% { 
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loader3 {
+  0% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loader2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
