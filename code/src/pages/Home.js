@@ -30,7 +30,7 @@ export default class Home extends Component {
 
         this.props.tl
             .from([...head, ...about, ...contact], 1.25, { delay: -1, ease: Power3.easeOut, opacity: 0, y: 50, stagger:{ amount: 0.75 } })
-            .from(links, .6, { delay: -1, ease: Power3.easeOut, y: 50, opacity: 0, stagger:{ amount: 0.5 } })
+            .from(links, .9, { delay: -1, ease: Power3.easeOut, y: 30, opacity: 0, stagger:{ amount: 1 } })
             .play()
     }
 
@@ -63,9 +63,12 @@ export default class Home extends Component {
                             <h2 className='title'><span ref='contact_title'>Reach Me</span></h2>
                             <p className='content'><span ref='contact_content'>Here are some places on the web where you can find me:</span></p>
                             <div ref='contact_links' className='links'>
-                                <a ref='twitter' href='https://github.com/am-77' title='AM-77'>GitHub</a>
+                                <a href='https://github.com/am-77' title='AM-77'>GitHub</a>
                                 <a href='https://www.linkedin.com/in/mohamed-amine-griche' title='mohamed-amine-griche'>LinkedIn</a>
                                 <a href='https://codepen.io/am-77' title='AM-77'>CodePen</a>
+                                <a href='https://www.npmjs.com/~am-77' title='AM-77'>NPM</a>
+                                <a href='https://dev.to/am77' title='AM-77'>dev.to</a>
+                                <a href='https://stackoverflow.com/users/10564525' title='AM-77'>stackoverflow</a>
                                 <a href='https://twitter.com/__AM77__' title='__AM77__'>Twitter</a>
                                 <a href='mailto:amine.griche77@gmail.com' title='amine.griche77@gmail.com'>Email</a>
                                 <a href='/cv.pdf' title='resume' target='_blank'>Resume</a>
