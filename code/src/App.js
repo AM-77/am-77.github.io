@@ -24,7 +24,7 @@ export default class App extends Component {
     onExit = node => { gsap.to(node, 1, { opacity: 0 }) }
 
     componentDidMount() { 
-        if ( new Date().getHours() > 18 ) document.body.classList.add('dark')
+        if ( new Date().getHours() < 7 || new Date().getHours() > 18 ) document.body.classList.add('dark')
         gsap.to(this.refs.app, 0, {css: { visibility: 'visible' }}) 
     }
 
