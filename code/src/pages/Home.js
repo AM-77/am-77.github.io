@@ -18,7 +18,9 @@ export default class Home extends Component {
         const about_title = this.refs.about_title
         const about_content1 = this.refs.about_content1
         const about_content2 = this.refs.about_content2
-        const about = [about_title, about_content1, about_content2]
+        const about_content3 = this.refs.about_content3
+        const about_content4 = this.refs.about_content4
+        const about = [about_title, about_content1, about_content2, about_content3, about_content4]
 
         // contact
         const contact_title = this.refs.contact_title
@@ -44,7 +46,7 @@ export default class Home extends Component {
                             <div className='name'>
                                 <div>
                                     <h1><span ref='first_name' className='first'>Mohamed Amine</span> <span ref='last_name' className='last'>Griche</span></h1>
-                                    <h4><span ref='title' className='title'>Software Engineer & a JS Lover <span className='heart-emoji' aria-label='emoji' role='img'>💛</span>.</span></h4>
+                                    <h4><span ref='title' className='title'>a software engineer who loves JavaScript <span className='heart-emoji' aria-label='emoji' role='img'>💛</span>.</span></h4>
                                 </div>
                                 <div ref='mein_foto' className='mein-foto'>
                                     <img src={meinFoto} alt='mien foto' />
@@ -54,8 +56,11 @@ export default class Home extends Component {
 
                         <div className='about'>
                             <h2 className='title'><span ref='about_title'>About</span></h2>
-                            <p className='content'><span ref='about_content1'>Hello, my name is Amine <span className='waving-emoji' aria-label='emoji' role='img'>👋</span></span></p>
-                            <p className='content'><span ref='about_content2'>I am a software engineer from Algeria.</span></p>
+                            <p ref='about_content1' className='content'>Hello, my name is Amine <span className='waving-emoji' aria-label='emoji' role='img'>👋</span></p>
+                            <p ref='about_content2' className='content'>I am a software engineer from Algeria</p>
+                            <p ref='about_content3' className='content'>I code, mostly in JavaScript & React</p>
+                            <p ref='about_content4' className='content'>and sometimes I write about it too, in <a href='https://am77-blog.netlify.app' title='AM77 Blog'>my-blog.</a></p>
+
                             {/* <NavLink to='/work'>Here are some of my works.</NavLink> */}
                         </div>
 
@@ -63,15 +68,16 @@ export default class Home extends Component {
                             <h2 className='title'><span ref='contact_title'>Reach Me</span></h2>
                             <p className='content'><span ref='contact_content'>Here are some places on the web where you can find me:</span></p>
                             <div ref='contact_links' className='links'>
-                                <a href='https://github.com/am-77' title='AM-77'>GitHub</a>
-                                <a href='https://www.linkedin.com/in/mohamed-amine-griche' title='mohamed-amine-griche'>LinkedIn</a>
-                                <a href='https://codepen.io/am-77' title='AM-77'>CodePen</a>
-                                <a href='https://www.npmjs.com/~am-77' title='AM-77'>NPM</a>
+                                <a href='https://am77-blog.netlify.app' title='AM77 Blog'>blog</a>
+                                <a href='https://github.com/am-77' title='AM-77'>github</a>
+                                <a href='https://www.linkedin.com/in/mohamed-amine-griche' title='mohamed-amine-griche'>linkedin</a>
+                                <a href='https://codepen.io/am-77' title='AM-77'>codepen</a>
+                                <a href='https://www.npmjs.com/~am-77' title='AM-77'>npm</a>
                                 <a href='https://dev.to/am77' title='AM-77'>dev.to</a>
                                 <a href='https://stackoverflow.com/users/10564525' title='AM-77'>stackoverflow</a>
-                                <a href='https://twitter.com/__AM77__' title='__AM77__'>Twitter</a>
-                                <a href='mailto:amine.griche77@gmail.com' title='amine.griche77@gmail.com'>Email</a>
-                                <a href='/cv.pdf' title='resume' target='_blank'>Resume</a>
+                                <a href='https://twitter.com/__AM77__' title='__AM77__'>twitter</a>
+                                <a href='mailto:amine.griche77@protonmail.ch' title='amine.griche77@protonmail.ch'>email</a>
+                                <a href='/cv.pdf' title='resume' target='_blank'>resume</a>
                             </div>
                         </div>
                     </div>
