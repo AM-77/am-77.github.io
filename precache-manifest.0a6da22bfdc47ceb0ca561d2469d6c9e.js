@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ccd3e90fe44eff520c5cbc6a05cde31a",
+    "revision": "efa3310c1b51dec37ae20e3953924daf",
     "url": "/index.html"
   },
   {
-    "revision": "8b0fabbde29fa45364f2",
-    "url": "/static/css/main.380c746b.chunk.css"
+    "revision": "468ccd4c570df9c8cf5f",
+    "url": "/static/css/main.2d4ec0fb.chunk.css"
   },
   {
     "revision": "48c02e71c83361ad31ac",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.96691094.chunk.js.LICENSE"
   },
   {
-    "revision": "8b0fabbde29fa45364f2",
-    "url": "/static/js/main.a96886e4.chunk.js"
+    "revision": "468ccd4c570df9c8cf5f",
+    "url": "/static/js/main.73edd17b.chunk.js"
   },
   {
     "revision": "79ab261fc46a48e3b06b",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2b1372dbd65796d41fe05791161b0a3c",
     "url": "/static/media/Cool-For-The-Momenet.2b1372db.ttf"
+  },
+  {
+    "revision": "972d54ac7985dbc9a8014a49a29c7668",
+    "url": "/static/media/Link-Font.972d54ac.ttf"
   },
   {
     "revision": "0f4a76c9a0a22cd3b1e6f94712862cec",
