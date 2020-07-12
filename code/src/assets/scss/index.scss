@@ -10,6 +10,11 @@
 	src: url('../fonts/Cool-For-The-Momenet.ttf') format('opentype');
 }
 
+@font-face {
+	font-family: 'Link-Font';
+	src: url('../fonts/Link-Font.ttf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,9 +27,29 @@ body {
     font-family: 'Cool-For-The-Momenet';
 
     a {
-        color: $dark;
-        transition: color 250ms ease-in-out;
+        display: inline-block;
+        font-family: 'Link-Font';
+        margin-right: 10px;
+        font-weight: 700;
+        font-size: 13px;
+        color: #212121;
+        text-decoration: none;
+        cursor: pointer;
+        background-image: linear-gradient(180deg, transparent 0, transparent 23px, #119955 0, #119955);
+        opacity: .9;
+        background-size: 100% 200%;
+        transition: all .27s ease;
+        background-position: 0 0;
+        padding: 0px 2px;
+        margin-bottom: 3px;
+        
+        &:hover {
+            opacity: 1;
+            background-position: 0 100%
+        }
     }
+
+    
 }
 
 body.dark {

@@ -11,7 +11,7 @@
   .center {
     display: flex;
     flex-direction: column;
-    max-width: 410px;
+    max-width: 435px;
 
     .head {
       display: flex;
@@ -88,17 +88,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         overflow: hidden;
-
-        a {
-          display: inline-block;
-          margin-right: 10px;
-          font-weight: 700;
-          font-size: 13px;
-
-          &:hover {
-            color: $primary;
-          }
-        }
       }
     }
   }
