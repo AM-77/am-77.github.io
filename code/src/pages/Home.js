@@ -32,7 +32,7 @@ export default class Home extends Component {
 
         this.props.tl
             .from([...head, ...about, ...contact], 1.25, { delay: -1, ease: Power3.easeOut, opacity: 0, y: 50, stagger:{ amount: 0.75 } })
-            .from(links, .9, { delay: -1, ease: Power3.easeOut, y: 30, opacity: 0, stagger:{ amount: 1 } })
+            .to(links, 1.5, { delay: -1, ease: Power3.easeOut, y: 0, opacity: 1, stagger:{ amount: 0.5 } })
             .play()
     }
 
