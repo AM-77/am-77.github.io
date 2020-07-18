@@ -46,7 +46,7 @@ export default class Home extends Component {
                             <div className='name'>
                                 <div>
                                     <h1><span ref='first_name' className='first'>Mohamed Amine</span> <span ref='last_name' className='last'>Griche</span></h1>
-                                    <h4><span ref='title' className='title'>a software engineer who loves JavaScript <span className='heart-emoji' aria-label='emoji' role='img'>💛</span>.</span></h4>
+                                    <h4><span ref='title' className='title'>A software engineer who loves Open Sourec,  Linux & JavaScript <span className='heart-emoji' aria-label='emoji' role='img'>💛</span>.</span></h4>
                                 </div>
                                 <div ref='mein_foto' className='mein-foto'>
                                     <img src={meinFoto} alt='mien foto' />
