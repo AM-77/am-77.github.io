@@ -3,7 +3,7 @@
 @import "animations.scss";
 @import "preloader.scss";
 @import "home.scss";
-
+@import "cursor.scss";
 
 @font-face {
 	font-family: 'Cool-For-The-Momenet';
@@ -34,8 +34,8 @@ body {
         font-size: 13px;
         color: #212121;
         text-decoration: none;
-        cursor: pointer;
-        background-image: linear-gradient(180deg, transparent 0, transparent 23px, #119955 0, #119955);
+        cursor: none;
+        background-image: linear-gradient(180deg, transparent 0, transparent 18px, #119955 0, #119955);
         opacity: .9;
         background-size: 100% 200%;
         transition: all 200ms ease;
@@ -45,7 +45,7 @@ body {
         
         &:hover {
             opacity: 1;
-            background-position: 0 100%
+            background-position: 0 100%;
         }
     }
 
