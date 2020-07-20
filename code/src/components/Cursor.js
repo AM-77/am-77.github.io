@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import gsap from 'gsap'
 
+
 export default class Cursor extends Component {
 
   constructor(props) {
@@ -9,7 +10,6 @@ export default class Cursor extends Component {
     this.smallBall = React.createRef();
   }
 
-  // Listeners
   componentDidMount() {
     document.body.addEventListener("mousemove", this.onMouseMove);
     const links = document.querySelectorAll("a")
@@ -19,13 +19,13 @@ export default class Cursor extends Component {
     }
   }
 
-  // Move the cursor
   onMouseMove = (e) => {
-    gsap.to(this.bigBall.current, 0.4, { x: e.pageX - 15, y: e.pageY - 15 })
-    gsap.to(this.smallBall.current, 0.1, { x: e.pageX - 5, y: e.pageY - 7 })
+    if ( this.bigBall.current && this.smallBall.current ) {
+      gsap.to(this.bigBall.current, 0.4, { x: e.pageX - 15, y: e.pageY - 15 })
+      gsap.to(this.smallBall.current, 0.1, { x: e.pageX - 5, y: e.pageY - 7 })
+    }
   }
 
-  // Hover an element
   onMouseHover = () => gsap.to(this.bigBall.current, 0.3, { scale: 4 })
   onMouseHoverOut = () => gsap.to(this.bigBall.current, 0.3, { scale: 1 })
 
