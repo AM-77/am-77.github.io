@@ -12,11 +12,22 @@ export default class Cursor extends Component {
 
   componentDidMount() {
     document.body.addEventListener("mousemove", this.onMouseMove);
-    const links = document.querySelectorAll("a")
-    for (let i = 0; i < links.length; i++) {
-      links[i].addEventListener("mouseenter", this.onMouseHover);
-      links[i].addEventListener("mouseleave", this.onMouseHoverOut);
-    }
+    const { links } = this.props
+    if (links) 
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("mouseenter", this.onMouseHover);
+        links[i].addEventListener("mouseleave", this.onMouseHoverOut);
+      }
+  }
+
+  componentDidUpdate() {
+    const { links } = this.props
+    if (links) 
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("mouseenter", this.onMouseHover);
+        links[i].addEventListener("mouseleave", this.onMouseHoverOut);
+        links[i].addEventListener("click", this.onMouseHoverOut);
+      }
   }
 
   onMouseMove = (e) => {
