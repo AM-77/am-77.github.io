@@ -45,3 +45,13 @@
     transform: translate(24px, 0);
   }
 }
+
+@keyframes move-mouse {
+  0% {
+    transform: translateY(-15px)
+  }
+
+  100% {
+    transform: translateY(35px)
+  }
+}
