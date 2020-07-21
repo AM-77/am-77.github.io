@@ -1,7 +1,7 @@
 [
   {
     "title": "realestate",
-    "desc": "An Algerian realestate selling web platform",
+    "desc": "A web platform for selling realestate in Algeria.",
     "links": {
       "Source Code": "https://github.com/AM-77/realestate"
     },
