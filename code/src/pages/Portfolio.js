@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Power3 } from 'gsap'
 import { NavLink } from 'react-router-dom'
 import Preloader from '../components/Preloader'
-import Works from './Works'
+import Works from '../components/Works'
 
 import works from "../assets/data/works.json"
 import old_works from "../assets/data/old-works.json"
