@@ -18,6 +18,33 @@
       flex-direction: column;
       width: 100%;
 
+      .mouse-btn {
+        width: 23px;
+        border: none;
+        background: none;
+        outline: none;
+        margin-top: 15px;
+
+        .mouse {
+          height: 35px;
+          width: 23px;
+          border: 2px solid $light;
+          border-radius: 15px;
+          position: relative;
+          overflow: hidden;
+    
+          span {
+            height: 10px;
+            width: 2px;
+            background: $light;
+            display: block;
+            position: absolute;
+            left: calc( 50% - 1px);
+            animation: move-mouse 1000ms ease infinite running;
+          }
+        }
+      }
+
       .name {
         display: flex;
         align-items: center;
