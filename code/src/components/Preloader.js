@@ -9,8 +9,8 @@ export default class Preloader extends Component {
     const logo = this.refs.logo
 
     this.props.tl
-      .from(logo, .75, { delay: 1, opacity: 0, y: 77 }) 
-      .to(logo, .75, { delay: .5, opacity: 0, y: -77 }) 
+      .from(logo, .65, { delay: .85, opacity: 0, y: 77 }) 
+      .to(logo, .65, { delay: .5, opacity: 0, y: -77 }) 
       .to(preloader, 0, { delay: 1, css: { display: 'none' }}) 
       .play()
   }
