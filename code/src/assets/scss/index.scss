@@ -3,16 +3,21 @@
 @import "animations.scss";
 @import "preloader.scss";
 @import "home.scss";
+@import "portfolio.scss";
 @import "cursor.scss";
-
-@font-face {
-	font-family: 'Cool-For-The-Momenet';
-	src: url('../fonts/Cool-For-The-Momenet.ttf') format('opentype');
-}
 
 @font-face {
 	font-family: 'Link-Font';
 	src: url('../fonts/Link-Font.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+@font-face {
+    font-family: "Marvin Visions";
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1147877/MarvinVisionsGX-subset.woff2)
+      format("woff2");
+    font-style: normal;
 }
 
 * {
@@ -24,7 +29,7 @@
 body {
     background: $light;
     color: $dark;
-    font-family: 'Cool-For-The-Momenet';
+    font-family: 'Roboto';
 
     a {
         display: inline-block;
@@ -48,8 +53,6 @@ body {
             background-position: 0 100%;
         }
     }
-
-    
 }
 
 body.dark {
@@ -59,4 +62,94 @@ body.dark {
     a {
         color: $light;
     }
+}
+
+.javascript {
+    background: $javascript;
+    box-shadow: 0 0 8px -2px $javascript;
+}
+
+.css {
+    background: $css;
+    box-shadow: 0 0 8px -2px $css;
+}
+
+.typescript {
+    background: $typescript;
+    box-shadow: 0 0 8px -2px $typescript;
+}
+
+.socketio {
+    background: $socket;
+    box-shadow: 0 0 8px -2px $socket;
+}
+
+.express {
+    background: $express;
+    box-shadow: 0 0 8px -2px $express;
+}
+
+.node {
+    background: $node;
+    box-shadow: 0 0 8px -2px $node;
+}
+
+.react {
+    background: $react;
+    box-shadow: 0 0 8px -2px $react;
+}
+
+.scss {
+    background: $scss;
+    box-shadow: 0 0 8px -2px $scss;
+}
+
+.mongodb {
+    background: $mongo;
+    box-shadow: 0 0 8px -2px $mongo;
+}
+
+.deno {
+    background: $deno;
+    box-shadow: 0 0 8px -2px $deno;
+}
+
+.sqlite3 {
+    background: $sqlite;
+    box-shadow: 0 0 8px -2px $sqlite;
+}
+
+.mysql {
+    background: $mysql;
+    box-shadow: 0 0 8px -2px $mysql;
+}
+
+.java {
+    background: $java;
+    box-shadow: 0 0 8px -2px $java;
+}
+
+.springboot {
+    background: $spring;
+    box-shadow: 0 0 8px -2px $spring;
+}
+
+.thymeleaf {
+    background: $thymeleaf;
+    box-shadow: 0 0 8px -2px $thymeleaf;
+}
+
+.jquery {
+    background: $jquery;
+    box-shadow: 0 0 8px -2px $jquery;
+}
+
+.materialize {
+    background: $material;
+    box-shadow: 0 0 8px -2px $material;
+}
+
+.html {
+    background: $html;
+    box-shadow: 0 0 8px -2px $html;
 }
