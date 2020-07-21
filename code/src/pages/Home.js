@@ -30,8 +30,8 @@ export default class Home extends Component {
                                         <img src={meinFoto} alt='mien foto' />
                                     </div>
                                 </div>
-                                <button onClick={() => this.props.fullpageApi.moveSectionDown()}>
-                                    go down
+                                <button className="mouse-btn" title="scroll down" onClick={() => this.props.fullpageApi.moveSectionDown()}>
+                                    <div className="mouse"><span></span></div>
                                 </button>
                             </div>
                         </div>
