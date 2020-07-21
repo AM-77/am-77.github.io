@@ -32,20 +32,20 @@ export default class Cursor extends Component {
 
   onMouseMove = (e) => {
     if ( this.bigBall.current && this.smallBall.current ) {
-      gsap.to(this.bigBall.current, 0.4, { x: e.pageX - 15, y: e.pageY - 15 })
-      gsap.to(this.smallBall.current, 0.1, { x: e.pageX - 5, y: e.pageY - 7 })
+      gsap.to(this.bigBall.current, 0.4, { x: e.pageX - 20, y: e.pageY - 16 })
+      gsap.to(this.smallBall.current, 0.1, { x: e.pageX - 7, y: e.pageY - 7 })
     }
   }
 
-  onMouseHover = () => gsap.to(this.bigBall.current, 0.3, { scale: 4 })
+  onMouseHover = () => gsap.to(this.bigBall.current, 0.3, { scale: 3 })
   onMouseHoverOut = () => gsap.to(this.bigBall.current, 0.3, { scale: 1 })
 
   render() {
     return (
       <div className="cursor">
         <div ref={this.bigBall} className="cursor-ball big">
-          <svg height="30" width="30">
-            <circle cx="15" cy="15" r="12"></circle>
+          <svg height="36" width="36">
+            <circle cx="18" cy="18" r="18"></circle>
           </svg>
         </div>
         <div ref={this.smallBall} className="cursor-ball small">
