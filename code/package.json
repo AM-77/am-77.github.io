@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.17",
     "gsap": "^3.4.1",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
