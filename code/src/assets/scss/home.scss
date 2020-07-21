@@ -23,14 +23,19 @@
         align-items: center;
         width: 100%;
 
-        h1, h4 {
-          left: 0px;
-          font-weight: 300;
-          overflow: hidden;
+        .title {
+          font-family: "Marvin Visions";
+          margin-bottom: 5px;
 
           span {
-            display: inline-block;
+            letter-spacing: 1.5px;
+          }
+        }
 
+        h1, p {
+          span {
+            display: inline-block;
+            font-weight: 400;
             .heart-emoji {
               color: #c5c52a
             }
@@ -61,12 +66,13 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin-top: 35px;
       line-height: 1.6;
 
-      h2 {
+      .title {
+        font-family: "Marvin Visions";
+        letter-spacing: 1.5;
+        font-size: 55px;
         font-weight: 300;
-        margin-bottom: 5px;
       }
 
       .title, .content {
@@ -76,32 +82,36 @@
           display: inline-block;
           
           .waving-emoji {
-            color: $primary
+            color: $primary;
           }
         }
       }
     }
 
+    .about {
+      a {
+        margin-right: 0;
+      }
+    }
+
+    .contact {
+      .content {
+        margin-bottom: 20px;
+      }
+    }
     .contact {
       .links {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         overflow: hidden;
-
-        a  {
-          opacity: 0;
-          transform: translate(0, 30px)
-        }
       }
     }
   }
 }
 
 @media (max-width: $breakpoint) {
-
   .home-container {
-    margin-top: 35px;
     padding-bottom: 35px;
 
     .center {
@@ -113,5 +123,4 @@
       } 
     }
   }
-
 }
