@@ -20,19 +20,22 @@ export default class Portfolio extends Component {
                 <Preloader tl={this.props.tl} />
                 <div ref="portfolio_page" className="portfolio-container">
                     <div className="center">
-                        <div className='section header'>
+                        <div className='section'>
+                        <div className="header">
                             <h1 className='title'>Portfolio</h1>
+                            <p>This section contains some of the project that I have worked on.</p>
                             <NavLink to='/'>Back To Home</NavLink>
-                            <button onClick={() => this.props.fullpageApi.moveSectionDown()}>
-                                Click me to move down
+                            <button className="mouse-btn" title="scroll down" onClick={() => this.props.fullpageApi.moveSectionDown()}>
+                                <div className="mouse"><span></span></div>
                             </button> 
+                        </div>
                         </div>
                         <Works works={works} />
                         <div className="section separator">
                             <h2 className="title">Some Old Works</h2>
                         </div>
                         <Works works={old_works} />
-                        <div className="section footer">this is el footer </div>  
+                        {/* <div className="section footer">this is el footer </div>   */}
                     </div>    
                 </div>
             </>
