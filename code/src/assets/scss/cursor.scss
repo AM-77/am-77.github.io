@@ -1,5 +1,5 @@
 body {
-  //cursor: none;
+  cursor: none;
 }
 
 body .cursor {
@@ -15,12 +15,15 @@ body .cursor-ball {
 }
 
 body .cursor-ball circle {
-  fill: $light;
   stroke-width: 0;
+}
+
+body.dark .cursor-ball circle {
+  fill: $light;
 }
 
 @media (max-width: $breakpoint) { 
   body .cursor {
-    //display: none;
+    display: none;
   }
 }
