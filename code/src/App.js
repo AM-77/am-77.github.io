@@ -40,7 +40,7 @@ export default class App extends Component {
         setTimeout(() => { 
             const links = document.querySelectorAll("a")
             this.setState({ links })
-        }, 1200)
+        }, 2000)
     }
 
     render() {
