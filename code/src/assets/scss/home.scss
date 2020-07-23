@@ -32,8 +32,9 @@
           border-radius: 15px;
           position: relative;
           overflow: hidden;
+          transform: scale(0.7);
     
-          span {
+          .wheel {
             height: 10px;
             width: 2px;
             background: $light;
@@ -42,6 +43,15 @@
             left: calc( 50% - 1px);
             animation: move-mouse 1000ms ease infinite running;
           }
+        }
+
+        .scroll {
+          font-family: 'Link-Font';
+          color: $light;
+          font-size: 11px;
+          position: absolute;
+          left: -6px;
+          font-weight: 700;
         }
       }
 

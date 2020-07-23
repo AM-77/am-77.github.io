@@ -26,7 +26,8 @@ export default class Portfolio extends Component {
                             <p>This section contains some of the project that I have worked on.</p>
                             <NavLink to='/'>Back To Home</NavLink>
                             <button className="mouse-btn" title="scroll down" onClick={() => this.props.fullpageApi.moveSectionDown()}>
-                                <div className="mouse"><span></span></div>
+                                <div className="mouse"><span className="wheel"></span></div>
+                                <span className="scroll">scroll</span>
                             </button> 
                         </div>
                         </div>

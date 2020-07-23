@@ -27,7 +27,7 @@
       
       .title {
         font-family: "Marvin Visions";
-        font-size: 74px;
+        font-size: 65px;
         letter-spacing: 1.5px;
       }
 
@@ -45,6 +45,7 @@
           border-radius: 15px;
           position: relative;
           overflow: hidden;
+          transform: scale(0.7);
     
           span {
             height: 12px;
@@ -55,6 +56,15 @@
             left: calc( 50% - 1px);
             animation: move-mouse 1000ms ease infinite running;
           }
+        }
+
+        .scroll {
+          font-family: 'Link-Font';
+          color: $light;
+          font-size: 11px;
+          position: relative;
+          left: -6px;
+          font-weight: 700;
         }
       }
         
@@ -101,5 +111,17 @@
     background-image: linear-gradient(180deg, transparent 0, transparent 16px, #119955 0, #119955);
     line-height: 1.3;
     padding: 1px 2px;
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .portfolio-container{
+    .center {
+      .header {      
+        .title {
+          font-size: 44px;
+        }
+      }
+    }
   }
 }

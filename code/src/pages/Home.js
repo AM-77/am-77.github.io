@@ -31,7 +31,8 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <button className="mouse-btn" title="scroll down" onClick={() => this.props.fullpageApi.moveSectionDown()}>
-                                    <div className="mouse"><span></span></div>
+                                    <div className="mouse"><span className="wheel"></span></div>
+                                    <span className="scroll">scroll</span>
                                 </button>
                             </div>
                         </div>
