@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AM-77 | Work</title>
+  <link rel="shortcut icon" href="media/logo.svg" type="image/x-icon">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <header>
+        <div class="brand">
+          <div class="logo">
+            <a href="/" title="AM-77">
+              <img src="./media/logo.svg" alt="AM-77 brand" />
+            </a>
+          </div>
+        </div>
+        <div class="menu-btn">
+          <button>menu</button>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="/">home</a></li>
+            <li class="nav-link"><a href="about.html">about</a></li>
+            <li class="nav-link active"><a href="work.html">work</a></li>
+            <li class="nav-link"><a href="https://am77-blog.netlify.app">blog <i><img src="media/external.svg"
+                    alt="blog external link"></i></a></li>
+            <li class="nav-link"><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="portfolio">
+        <div class="main-title">
+          <h2>Some Of My Works</h2>
+        </div>
+        <div class="gallery">
+          <div class="filters">
+            <span class="filter active all" data-filter="*">all</span>
+          </div>
+          <div class="works"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="wrap">
+      <div class="inner-wrapper">
+        <div class="ask">
+          <p class="wow fadeUp">Do you have a project for me?</p>
+        </div>
+        <div class="hr"></div>
+        <div class="infos">
+          <div class="media">
+            <div class="title">
+              <p>follow me</p>
+            </div>
+            <ul class="content">
+              <li class="account gh wow fadeUp" data-wow-delay="0.4s">
+                <a title="github" href="https://github.com/AM-77">gh</a>
+              </li>
+              <li class="account tw wow fadeUp" data-wow-delay="0.4s">
+                <a title="twitter" href="https://twitter.com/__AM77__">tw</a>
+              </li>
+              <li class="account dt wow fadeUp" data-wow-delay="0.4s">
+                <a title="dev.to" href="https://dev.to/am77">dt</a>
+              </li>
+              <li class="account li wow fadeUp" data-wow-delay="0.4s">
+                <a title="linkedin" href="https://www.linkedin.com/in/mohamed-amine-griche">li</a>
+              </li>
+            </ul>
+          </div>
+          <div class="emial">
+            <div class="title">
+              <p>e-mail me</p>
+            </div>
+            <div class="content">
+              <p>amine.griche77[at]protonmail[dot]ch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- work data -->
+  <script defer src="media/data/old-works.js"></script>
+  <script defer src="media/data/works.js"></script>
+  <!-- javascript -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/scrollreveal.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(window).on("load", function () {
+
+      const work_template = work => `<div class="work ${work.tags.map(tag => tag.toLowerCase()).join(" ")}">
+        <div class="title"><h1>${work.title}</h1></div>
+        <div class="infos"><p>${work.desc}</p></div>
+        <div class="links">${Object.keys(work.links).map(link =>`<a class="work-link" href="${work.links[link]}" alt="${link}">${link}</a>`).join(" ")}</div>
+        <div class="tags">${work.tags.map(tag => `<span class="filter tag ${tag.toLowerCase()}" data-filter=".${tag.toLowerCase()}">${tag}</span>`).join(" ")}</div>
+      </div>`
+
+      const filter_template = filter =>
+        `<span class="filter ${filter.toLowerCase()}" data-filter=".${filter.toLowerCase()}"> ${filter.toLowerCase()} </span>`
+
+      const worksEl = $(".works")
+      const filtersEl = $(".filters")
+      const all_works = works.concat(old_works)
+      const all_tags = []
+
+      /* works */
+      all_works.map(work => {
+        worksEl.append(work_template(work))
+        all_tags.push(...work.tags)
+      })
+
+      /* filters */
+      const filters = [...new Set(all_tags)]
+      filters.map(filter => filtersEl.append(filter_template(filter)))
+
+      /* isotope */
+      worksEl.isotope({
+        itemSelector: '.work',
+        masonry: {
+          gutter: 25,
+          fitWidth: true
+        }
+      })
+
+      const fitlers = $(".filter")
+      fitlers.each(function () {
+        $(this).on("click", function () {
+          const filter = $(this).data().filter
+          worksEl.isotope({
+            filter
+          })
+          active(filter)
+        })
+      })
+
+      const active = filter => {
+        $(".filters .filter").each(function () {
+          if (filter !== "*")
+            $(this).hasClass(filter.slice(1)) ? $(this).addClass("active") : $(this).removeClass("active")
+          else
+            $(this).hasClass("all") ? $(this).addClass("active") : $(this).removeClass("active")
+        })
+      }
+
+      // ScrollReveal().reveal('.work', {
+      //   scale: 0.95,
+      //   opacity: 0,
+      //   delay: 200,
+      //   duration: 1000
+      // })
+    })
+  </script>
+</body>
+
+</html>
