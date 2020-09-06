@@ -904,10 +904,15 @@ footer .wrap .infos .emial .content p {
     padding: 30px;
   }
   
+  .wrapper header .brand {
+    z-index: 10;
+  }
+
   .wrapper header .menu-btn {
     display: flex;
     height: 30px;
     width: calc(100% - 30px);
+    z-index: 10;
   }
 
   .wrapper header .menu-btn button {
@@ -922,10 +927,6 @@ footer .wrap .infos .emial .content p {
   }
 
   .wrapper header nav {
-    opacity: 1
-  }
-
-  .wrapper header nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -935,7 +936,8 @@ footer .wrap .infos .emial .content p {
     z-index: -1;
     opacity: 0;
     background-color: var(--dark);
-    transition: all 250ms ease 100ms
+    box-shadow: 0 0 0 100px var(--dark);
+    transition: all 250ms ease 250ms;
   }
 
   .wrapper header.open nav {
@@ -945,8 +947,14 @@ footer .wrap .infos .emial .content p {
 
   .wrapper header nav ul {
     flex-direction: column;
-    transition: all 250ms ease 0ms
+    opacity: 0;
+    transition: all 100ms ease 0ms
   }
+
+  .wrapper header.open nav ul {
+    opacity: 1;
+  }
+
   .wrapper header nav ul li {
     font-size: 27px;
     margin: 10px 0;
