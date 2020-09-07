@@ -635,6 +635,38 @@ footer .wrap .infos .emial .content p {
   position: relative;
 }
 
+.portfolio .gallery .loading {
+  text-align: center;
+  padding: 30px;
+}
+
+.portfolio .gallery .loading .loader {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 3px solid var(--light);
+  border-right: 3px solid transparent;
+  animation: rotation 700ms linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.portfolio .gallery .loading p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Link", "Roboto Mono", monospace, sans-serif;
+  margin-top: 50px;
+}
+
 .portfolio .gallery .filters .filter {
   display: inline-block;
   font-family: 'Link';

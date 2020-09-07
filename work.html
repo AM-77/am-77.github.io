@@ -42,9 +42,11 @@
           <h2>Some Of My Works</h2>
         </div>
         <div class="gallery">
-          <div class="filters">
-            <span class="filter active all" data-filter="*">all</span>
+          <div class="loading">
+            <span class="loader"></span>
+            <p>loading ...</p>
           </div>
+          <div class="filters"></div>
           <div class="works"></div>
         </div>
       </div>
@@ -99,6 +101,9 @@
   <script src="js/main.js"></script>
   <script type="text/javascript">
     $(window).on("load", function () {
+      
+      // remove the loader
+      $(".gallery .loading").remove()
 
       const work_template = work => `<div class="work ${work.tags.map(tag => tag.toLowerCase()).join(" ")}">
         <div class="title"><h1>${work.title}</h1></div>
@@ -123,6 +128,7 @@
 
       /* filters */
       const filters = [...new Set(all_tags)]
+      filtersEl.append(`<span class="filter active all" data-filter="*">all</span>`)
       filters.map(filter => filtersEl.append(filter_template(filter)))
 
       /* isotope */
@@ -154,12 +160,6 @@
         })
       }
 
-      // ScrollReveal().reveal('.work', {
-      //   scale: 0.95,
-      //   opacity: 0,
-      //   delay: 200,
-      //   duration: 1000
-      // })
     })
   </script>
 </body>
