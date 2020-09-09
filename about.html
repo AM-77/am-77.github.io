@@ -12,7 +12,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="preloading">
+  <div class="preloader">
+    <div class="loading">
+      <span class="loader"></span>
+      <p>loading ...</p>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="inner-wrapper">
       <header>
@@ -31,55 +37,61 @@
             <li class="nav-link"><a href="/">home</a></li>
             <li class="nav-link active"><a href="about.html">about</a></li>
             <li class="nav-link"><a href="work.html">work</a></li>
-            <li class="nav-link"><a href="https://am77-blog.netlify.app">blog <i><img src="media/external.svg"
+            <li class="nav-link"><a href="https://am77-blog.netlify.app">blog <i class="external"><img src="media/external.svg"
                     alt="blog external link"></i></a></li>
             <li class="nav-link"><a href="contact.html">contact</a></li>
           </ul>
         </nav>
       </header>
       <div class="bio">
-        <div class="picture">
-          <img src="media/profile-pic.jpg" />
-        </div>
-        <div class="infos">
-          <div class="intro">
-            <p>
-              Hey! I'm Amine. I'm a software engineer / full stack web dev based in Algeria.
-              I love to build things and I try to contribute to and advocate the Open Source world as much as possible.
-              <br />
-              I believe in programming until 4 A.M instead of getting up early to attend conferences about productivity.
-            </p>
-          </div>
-          <div class="links">
-            <ul>
-              <li class="account gh wow fadeUp" data-wow-delay="0.4s">
-                <a title="github" href="https://github.com/AM-77">github</a>
-              </li>
-              <li class="account li wow fadeUp" data-wow-delay="0.4s">
-                <a title="linkedin" href="https://www.linkedin.com/in/mohamed-amine-griche">linkedin</a>
-              </li>
-              <li class="account li wow fadeUp" data-wow-delay="0.4s">
-                <a title="codepen" href="https://codepen.io/am-77">codepen</a>
-              </li>
-              <li class="account li wow fadeUp" data-wow-delay="0.4s">
-                <a title="dev.to" href="https://dev.to/am77">dev.to</a>
-              </li>
-              <li class="account tw wow fadeUp" data-wow-delay="0.4s">
-                <a title="twitter" href="https://twitter.com/__AM77__">twitter</a>
-              </li>
-              <li class="account so wow fadeUp" data-wow-delay="0.4s">
-                <a title="stackoverflow" href="https://stackoverflow.com/users/10564525">stackoverflow</a>
-              </li>
-              <li class="account so wow fadeUp" data-wow-delay="0.4s">
-                <a title="npm" href="https://www.npmjs.com/~am-77">npm</a>
-              </li>
-              <li class="account so wow fadeUp" data-wow-delay="0.4s">
-                <a title="email" href="mailto:amine.griche77@protonmail.ch">email</a>
-              </li>
-              <li class="account so wow fadeUp" data-wow-delay="0.4s">
-                <a title="resume" href="media/resume.pdf">resume</a>
-              </li>
-            </ul>
+        <div class="bio-wrapper">
+          <div class="bio-content">
+            <div class="picture">
+              <img src="media/profile-pic.jpg" />
+            </div>
+            <div class="infos">
+              <div class="intro">
+                <p>
+                  Hey! I'm Amine. I'm a software engineer / full stack web dev based in Algeria.
+                  I love to build things and I try to contribute to and advocate the Open Source world as much as
+                  possible.
+                  <br />
+                  I believe in programming until 4 A.M instead of getting up early to attend conferences about
+                  productivity.
+                </p>
+              </div>
+              <div class="links">
+                <ul>
+                  <li class="account gh" data-wow-delay="0.4s">
+                    <a title="github" href="https://github.com/AM-77">github</a>
+                  </li>
+                  <li class="account li" data-wow-delay="0.4s">
+                    <a title="linkedin" href="https://www.linkedin.com/in/mohamed-amine-griche">linkedin</a>
+                  </li>
+                  <li class="account li" data-wow-delay="0.4s">
+                    <a title="codepen" href="https://codepen.io/am-77">codepen</a>
+                  </li>
+                  <li class="account li" data-wow-delay="0.4s">
+                    <a title="dev.to" href="https://dev.to/am77">dev.to</a>
+                  </li>
+                  <li class="account tw" data-wow-delay="0.4s">
+                    <a title="twitter" href="https://twitter.com/__AM77__">twitter</a>
+                  </li>
+                  <li class="account so" data-wow-delay="0.4s">
+                    <a title="stackoverflow" href="https://stackoverflow.com/users/10564525">stackoverflow</a>
+                  </li>
+                  <li class="account so" data-wow-delay="0.4s">
+                    <a title="npm" href="https://www.npmjs.com/~am-77">npm</a>
+                  </li>
+                  <li class="account so" data-wow-delay="0.4s">
+                    <a title="email" href="mailto:amine.griche77@protonmail.ch">email</a>
+                  </li>
+                  <li class="account so" data-wow-delay="0.4s">
+                    <a title="resume" href="media/resume.pdf">resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -89,7 +101,7 @@
     <div class="wrap">
       <div class="inner-wrapper">
         <div class="ask">
-          <p class="wow fadeUp">Do you have a project for me?</p>
+          <p>Do you have a project for me?</p>
         </div>
         <div class="infos">
           <div class="media">
@@ -97,16 +109,16 @@
               <p>follow me</p>
             </div>
             <ul class="content">
-              <li class="account gh wow fadeUp" data-wow-delay="0.4s">
+              <li class="account gh" data-wow-delay="0.4s">
                 <a title="github" href="https://github.com/AM-77">gh</a>
               </li>
-              <li class="account tw wow fadeUp" data-wow-delay="0.4s">
+              <li class="account tw" data-wow-delay="0.4s">
                 <a title="twitter" href="https://twitter.com/__AM77__">tw</a>
               </li>
-              <li class="account dt wow fadeUp" data-wow-delay="0.4s">
+              <li class="account dt" data-wow-delay="0.4s">
                 <a title="dev.to" href="https://dev.to/am77">dt</a>
               </li>
-              <li class="account li wow fadeUp" data-wow-delay="0.4s">
+              <li class="account li" data-wow-delay="0.4s">
                 <a title="linkedin" href="https://www.linkedin.com/in/mohamed-amine-griche">li</a>
               </li>
             </ul>
@@ -126,9 +138,53 @@
 
   <!-- javascript -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="js/gsap.min.js"></script>
   <script src="js/main.js"></script>
-  
+  <script>
+    $(window).on("load", function () {
+      $("body").removeClass("preloading")
+      $(".preloader").animate({
+        opacity: 0
+      }, 500, () => $(".preloader").css({
+        "display": "none"
+      }))
+
+      gsap.from([".logo", ".menu-btn button", ".nav-link"], {
+        duration: 1.8,
+        y: 100,
+        opacity: 0,
+        delay: 0.2,
+        stagger: 0.1,
+        ease: "power3.inOut"
+      })
+
+      gsap.from(".external", {
+        duration: 0.8,
+        delay: 1.5,
+        opacity: 0,
+        scale: 0,
+        ease: "power3.inOut"
+      })
+
+      gsap.from([".bio-content .picture", ".bio-content .intro"], {
+        duration: 1.8,
+        delay: .5,
+        opacity: 0,
+        y: 200,
+        stagger: 0.2,
+        ease: "power3.inOut"
+      })
+
+      gsap.from(".bio-content .links .account", {
+        duration: 1.5,
+        delay: 1,
+        opacity: 0,
+        y: 70,
+        stagger: 0.1,
+        ease: "power3.inOut"
+      })
+    })
+  </script>
 </body>
 
 </html>
