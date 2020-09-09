@@ -12,7 +12,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="preloading">
+  <div class="preloader">
+    <div class="loading">
+      <span class="loader"></span>
+      <p>loading ...</p>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="inner-wrapper">
       <header>
@@ -31,7 +37,7 @@
             <li class="nav-link"><a href="/">home</a></li>
             <li class="nav-link"><a href="about.html">about</a></li>
             <li class="nav-link"><a href="work.html">work</a></li>
-            <li class="nav-link"><a href="https://am77-blog.netlify.app">blog <i><img src="media/external.svg"
+            <li class="nav-link"><a href="https://am77-blog.netlify.app">blog <i class="external"><img src="media/external.svg"
                     alt="blog external link"></i></a></li>
             <li class="nav-link active"><a href="contact.html">contact</a></li>
           </ul>
@@ -135,8 +141,35 @@
 
   <!-- javascript -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="js/gsap.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(window).on("load", function() {
+      $("body").removeClass("preloading")
+      $(".preloader").animate({
+        opacity: 0
+      }, 500, () => $(".preloader").css({
+        "display": "none"
+      }))
+
+      gsap.from([".logo", ".menu-btn button", ".nav-link", ".title h2", ".gallery", ".form form", ".links li"], {
+        duration: 1.8,
+        y: 100,
+        opacity: 0,
+        delay: 0.2,
+        stagger: 0.1,
+        ease: "power3.inOut"
+      })
+
+      gsap.from(".external", {
+        duration: 0.8,
+        delay: 1.5,
+        opacity: 0,
+        scale: 0,
+        ease: "power3.inOut"
+      })
+    })
+  </script>
 </body>
 
 </html>
