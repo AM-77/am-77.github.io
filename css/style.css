@@ -254,8 +254,59 @@ body {
   position: relative;
 }
 
-/* home page */
+/* preloader */
+.preloader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 11;
+  background: var(--dark);
+}
 
+.loading {
+  text-align: center;
+  padding: 30px;
+}
+
+.loading .loader {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 3px solid var(--light);
+  border-right: 3px solid transparent;
+  animation: rotation 700ms linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.loading p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Link", "Roboto Mono", monospace, sans-serif;
+  margin-top: 50px;
+}
+
+body.preloading .wrapper, 
+body.preloading footer{
+  display: none
+}
+
+/* home page */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -285,6 +336,7 @@ body {
   flex-flow: wrap;
   height: 60px;
   padding: 0 30px;
+  overflow: hidden;
 }
 
 .wrapper header .brand .logo {
@@ -358,6 +410,12 @@ body {
   padding: 0px 35px;
 }
 
+.wrapper .hero .hero-wrapper{
+  margin-bottom: 70px;
+  padding: 10px;
+  overflow: hidden;
+}
+
 .wrapper .hero .hero-content {
   display: flex;
   flex-direction: column;
@@ -366,7 +424,6 @@ body {
   border: 1px solid var(--light);
   position: relative;
   padding: 20px;
-  margin-bottom: 70px;
 }
 
 .wrapper .hero .hero-content:before,
@@ -533,6 +590,15 @@ footer .wrap .infos .emial .content p {
   padding: 30px;
 }
 
+.wrapper .bio .bio-wrapper,
+.wrapper .bio .bio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .wrapper .bio .picture {
   min-width: 100px;
   min-height: 100px;
@@ -621,6 +687,7 @@ footer .wrap .infos .emial .content p {
 .portfolio .main-title {
   display: flex;
   margin: 120px auto 70px auto;
+  overflow: hidden;
 }
 
 .portfolio .main-title h2 {
@@ -633,38 +700,7 @@ footer .wrap .infos .emial .content p {
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-
-.portfolio .gallery .loading {
-  text-align: center;
-  padding: 30px;
-}
-
-.portfolio .gallery .loading .loader {
-  display: block;
-  margin: 0 auto;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border-top: 3px solid var(--light);
-  border-right: 3px solid transparent;
-  animation: rotation 700ms linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} 
-
-.portfolio .gallery .loading p {
-  font-size: 15px;
-  font-weight: 700;
-  font-family: "Link", "Roboto Mono", monospace, sans-serif;
-  margin-top: 50px;
+  overflow: hidden;
 }
 
 .portfolio .gallery .filters .filter {
@@ -798,6 +834,7 @@ footer .wrap .infos .emial .content p {
 .contact .title {
   display: flex;
   margin: 120px auto 0px auto;
+  overflow: hidden;
 }
 
 .contact .title h2 {
@@ -807,6 +844,7 @@ footer .wrap .infos .emial .content p {
 
 .contact .main .links {
   margin: 24px 0;
+  overflow: hidden;
 }
 
 .contact .main .links ul {
@@ -842,6 +880,7 @@ footer .wrap .infos .emial .content p {
   display: flex;
   width: 100%;
   margin: 50px auto;
+  overflow: hidden;
 }
 
 .contact .main .form form {
@@ -923,7 +962,8 @@ footer .wrap .infos .emial .content p {
     padding: 30px 0;
   }
   
-  .wrapper header.open {
+  .wrapper header.open,
+  .wrapper header.close {
     position: fixed;
     top: 0;
     left: 0;
@@ -935,7 +975,13 @@ footer .wrap .infos .emial .content p {
     flex-wrap: wrap;
     padding: 30px;
   }
-  
+
+  .wrapper header.close {
+    background-color: transparent;
+    height: 60px;
+    transition: height 0ms ease 300ms;
+  }
+
   .wrapper header .brand {
     z-index: 10;
   }
@@ -945,6 +991,7 @@ footer .wrap .infos .emial .content p {
     height: 30px;
     width: calc(100% - 30px);
     z-index: 10;
+    overflow: hidden;
   }
 
   .wrapper header .menu-btn button {
@@ -966,6 +1013,7 @@ footer .wrap .infos .emial .content p {
     height: calc(100vh - 90px);
     width: 100%;
     z-index: -1;
+    visibility: hidden;
     opacity: 0;
     background-color: var(--dark);
     box-shadow: 0 0 0 100px var(--dark);
@@ -973,8 +1021,15 @@ footer .wrap .infos .emial .content p {
   }
 
   .wrapper header.open nav {
+    visibility: visible;
     opacity: 1;
     z-index: 1;
+  }
+
+  .wrapper header.close nav{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .wrapper header nav ul {
