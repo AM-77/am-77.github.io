@@ -5,10 +5,10 @@ $(window).on("load", function () {
   menu_btn.on("click", function(){
     if ($(this).text() === "menu") {
       $(this).text("close")
-      wrapper.addClass("open")
+      wrapper.removeClass("close").addClass("open")
     } else {
       $(this).text("menu")
-      wrapper.removeClass("open")
+      wrapper.removeClass("open").addClass("close")
     }
   })
 })
